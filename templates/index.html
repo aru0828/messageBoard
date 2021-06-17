@@ -1,0 +1,74 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="tools">
+        <h1>發表一篇圖文</h1>
+        <form action="" class="messageForm" >
+            <div>
+                <label for="">文字內容 :</label>
+                 <input type="text" required class="formText">
+            </div>
+            
+            <br>
+            <div>
+                <label for="">圖片檔案 :</label>
+                <input type="file" required class="formFile" name="file">
+            </div>
+            
+            <br>
+            <button>送出</button>
+        </form>
+    </div>
+    
+    <div class="container"></div>
+</body>
+    
+    <script src="../static/js/index.js"></script>
+</html>
+
+
+<style>
+  
+
+    .tools{
+        width: 100%;
+        display: flex;
+        flex-direction:column;
+        align-items: center;
+      
+    }
+
+    .tools form{
+        display: flex;
+        flex-direction:column;
+        align-items: center;
+    }
+    .tools button{
+        justify-self: flex-end;
+    }
+    .container{
+        width: 1200px;
+        margin:0 auto;
+        display: flex;
+        justify-content: center;
+        flex-wrap:wrap
+    }
+    .container div{
+        width: 24%;
+        padding: 10px 0px;
+        border:1px solid black;
+    }
+
+    .messageForm div{
+        width: 100%;
+    }
+
+    img{
+        width: 100px;
+        height: 100px;
+    }
+</style>
